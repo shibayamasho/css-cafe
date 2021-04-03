@@ -74,7 +74,7 @@ header nav ul li.current a {
 }
 
 #main_content {
-  width:  65%;
+  width: 65%;
 }
 
 #sidebar {
@@ -152,4 +152,25 @@ footer ul li a:active {
 
 small {
   font-size: 0.7rem;
+}
+
+/* responsive */
+
+@media(max-width: 600px) {
+  html {
+    font-size: 87.5%;
+  }
+  .header-logo {
+    width: 60px;
+  }
+
+  .contents {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  #main_content,
+  #sidebar {
+    width: 100%;
+  }
 }
